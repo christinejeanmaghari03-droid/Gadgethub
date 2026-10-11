@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetHub</title>
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid px-3 px-lg-4 py-2">
+                <a href="#home" class="navbar-brand brand d-flex align-items-center gap-2 m-0">
+                    <img src="img/logo.jpg" alt="Gadgethub logo" class="logo-img">
+                    <h1 class="m-0">Gadget<span>Hub</span></h1>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNav" aria-controls="mainNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                    <div class="navbar-nav align-items-lg-center gap-lg-4 gap-2 pt-3 pt-lg-0">
+                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#items">Items</a>
+                        <a class="nav-link" href="#about">About us</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#orders">Orders</a>
+                        <a class="nav-link cart-link" href="#cart">Cart<span id="cart-count" class="badge">0</span></a>
+                        <a href="#login" class="login-nav-button">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   
+    <div class="view" id="view-home">
+
+        <main class="hero container-xl" id="home">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5 hero-text text-center text-lg-start">
+                    <p class="tagline">YOUR TECH. OUR PRIORITY.</p>
+                    <h2>Latest Gadgets &amp; <span class="blue">Laptops</span></h2>
+                    <p class="desc">Get the best deals on the laptops, computers and more.</p>
+                </div>
+
+                <section class="col-lg-7 items">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100">
+                                <img src="img/Lp.jpg" alt="Laptop">
+                                <h2>Laptop</h2>
+                                <p>Starts at 40,000</p>
+                                <div class="buy-btns">
+                                    <a href="#items" class="buy" data-go="Laptop">Buy Now</a>
+                                    <button type="button" class="add-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100">
+                                <img src="img/Kb.jpg" alt="Keyboard">
+                                <h2>Keyboard</h2>
+                                <p>Starts at 1,500</p>
+                                <div class="buy-btns">
+                                    <a href="#items" class="buy" data-go="Keyboard">Buy Now</a>
+                                    <button type="button" class="add-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <section class="shop container-xl" id="items">
+            <h2 class="section-title">Categories</h2>
+
+            <div class="categories">
+                <button type="button" class="cat-btn active" data-category="All">All</button>
+                <button type="button" class="cat-btn" data-category="PC Setup">PC Setup</button>
+                <button type="button" class="cat-btn" data-category="Laptop">Laptop</button>
+                <button type="button" class="cat-btn" data-category="Mouse">Mouse</button>
+                <button type="button" class="cat-btn" data-category="Keyboard">Keyboard</button>
+            </div>
+
+            <div class="carousel-row">
+                <div class="arrow" id="prev">❮</div>
+
+                <div class="products">
+                    <div class="loop">
+                        <div class="track" id="products"></div>
+                    </div>
+                </div>
+
+                <div class="arrow" id="next">❯</div>
+            </div>
+        </section>
+    </div>
+
+    
+    <div class="view" id="view-about">
+        <div class="container-xl">
+            <div class="page-title">
+                <p>About Us</p>
+                <h2>Gadget<span class="blue">Hub</span></h2>
+            </div>
+
+            <div class="row g-4 my-2">
+                <div class="col-md-6">
+                    <div class="box h-100">
+                        <h3>Who We Are</h3>
+                        <p>GadgetHub is an online store that sells laptops, desktops, mice and keyboards for students, workers, and gamers. We sell from trusted brands and explain every product in simple words.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box h-100">
+                        <h3>Our Mission</h3>
+                        <p>Our mission is to help every customer find good tech that fits their needs and budget.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="why">
+                <h3 class="why-title">Why Choose Us</h3>
+                <div class="row g-4 mt-1">
+                    <div class="col-md-4">
+                        <div class="pill h-100">
+                            <h4>Quality Products</h4>
+                            <p>100% original items with warranty.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pill h-100">
+                            <h4>Affordable Prices</h4>
+                            <p>Good prices for every budget.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pill h-100">
+                            <h4>Easy Shopping</h4>
+                            <p>Simple to browse, order, and pay.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta">
+                <a href="#items" class="buy">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="view" id="view-contact">
+        <div class="container-xl">
+            <div class="page-title">
+                <p>Get in touch</p>
+                <h2>Contact Us</h2>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <label class="form-label" for="contactName">Name</label>
+                <input class="form-control" id="contactName" type="text" required maxlength="100" autocomplete="name">
+
+                <label class="form-label" for="contactEmail">Email</label>
+                <input class="form-control" id="contactEmail" type="email" required maxlength="150" autocomplete="email">
+
+                <label class="form-label" for="contactMessage">Message</label>
+                <textarea class="form-control" id="contactMessage" rows="5" required maxlength="1000"></textarea>
+
+                <button type="submit" class="buy-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <
+    <div class="view" id="view-orders">
+        <div class="container-xl">
+            <div class="page-title">
+                <p>Your purchases</p>
+                <h2>My Orders</h2>
+            </div>
+
+            <div class="orders-wrap">
+                <div class="order-actions">
+                    <button type="button" class="clear-orders" id="clearOrders">Clear all orders</button>
+                </div>
+                <div id="ordersList"></div>
+                <p class="local-order-note">Note: orders are saved only on this device.</p>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="view" id="view-cart">
+        <div class="container-xl">
+            <div class="page-title">
+                <p>Your selected products</p>
+                <h2>My Shopping Cart</h2>
+            </div>
+
+            <div class="cart-wrap">
+                <div id="cartItemsList">
+                    <p class="empty-note">Your cart is empty.</p>
+                </div>
+
+                <h3>Total: <span id="cartPageTotal">₱0</span></h3>
+
+                <button type="button" id="cartCheckout" class="buy-button">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="view" id="view-login">
+        <div class="login-container">
+            <div class="login-box" id="loginForm">
+                <div class="login-title">Gadget<span>Hub</span></div>
+                <div class="login-subtitle">Login to Your Account</div>
+
+                <label class="input-title" for="username">Username</label>
+                <input class="form-control" type="text" id="username" placeholder="Enter username" autocomplete="username">
+
+                <label class="input-title" for="password">Password</label>
+                <input class="form-control" type="password" id="password" placeholder="Enter password" autocomplete="current-password">
+
+                <div id="registerFields" style="display:none;">
+                    <label class="input-title" for="confirmPassword">Confirm Password</label>
+                    <input class="form-control" type="password" id="confirmPassword" placeholder="Re-enter password" autocomplete="new-password">
+                </div>
+
+                <button type="button" class="login-button" id="loginButton">Login</button>
+                <div id="loginMessage"></div>
+
+                <button type="button" class="back-home" id="showRegister">Create an Account</button>
+
+                <a href="#home" class="back-home">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="checkout-backdrop" id="checkoutBackdrop" aria-hidden="true">
+        <div class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+            <button type="button" class="checkout-close" id="closeCheckout" aria-label="Close">&times;</button>
+            <h2 id="checkoutTitle">Checkout</h2>
+            <div class="checkout-product" id="checkoutProduct"></div>
+
+            <form id="checkoutForm">
+                <label class="form-label" for="orderQuantity">Quantity</label>
+                <input class="form-control" id="orderQuantity" type="number" min="1" max="99" value="1" required>
+
+                <label class="form-label" for="customerName">Full Name</label>
+                <input class="form-control" id="customerName" type="text" required maxlength="100" autocomplete="name">
+
+                <label class="form-label" for="customerPhone">Phone</label>
+                <input class="form-control" id="customerPhone" type="tel" required maxlength="20" autocomplete="tel">
+
+                <label class="form-label" for="customerAddress">Address</label>
+                <textarea class="form-control" id="customerAddress" rows="3" required maxlength="300" autocomplete="street-address"></textarea>
+
+                <label class="form-label" for="paymentMethod">Payment Method</label>
+                <select class="form-select" id="paymentMethod">
+                    <option>Cash on Delivery</option>
+                    <option>GCash</option>
+                    <option>Credit/Debit Card</option>
+                </select>
+
+                <div class="checkout-total">Total: <span id="checkoutTotal">₱0</span></div>
+                <button type="submit" class="buy-button place-order-button">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="order-toast" id="orderToast" role="status" aria-live="polite"></div>
+
+    <footer class="footer">
+        <p>© 2026 GadgetHub</p>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+   
+    <script src="auth.js"></script>
+    <script>
+      
+        const menu = document.getElementById("mainNav");
+
+        menu.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                if (menu.classList.contains("show")) {
+                    bootstrap.Collapse.getOrCreateInstance(menu).hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
