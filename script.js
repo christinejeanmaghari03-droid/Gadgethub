@@ -179,7 +179,7 @@ const products = [
     { name: "Apple Magic Mouse", price: 5990, category: "Mouse", image: "img/applemouse.jpg",
       intro: "Smooth multi-touch mouse that works great with a Mac.",
       specs: ["Multi-Touch surface", "Bluetooth", "Rechargeable battery", "Works with Mac and iPad"] },
-    { name: "Logitech MX Anywhere 3S", price: 4995, category: "Mouse", image: "img/logitech.jpg",
+    { name: "Logitech MX Anywhere 3S", price: 4995, category: "Mouse", image: "img/legotech.jpg",
       intro: "Small travel mouse that still tracks on glass.",
       specs: ["8,000 DPI", "Quiet clicks", "Bluetooth + Logi Bolt", "USB-C, up to 70 days battery"] },
 
